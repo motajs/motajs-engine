@@ -125,10 +125,6 @@ return () => (
 | 高频更新内容     | `nocache=true` | 每帧重绘 | 动画/计数器     |
 | 混合内容         | 分层容器       | 按需更新 | 带静态背景的 UI |
 
-### 大数据量处理方案
-
-考虑使用[滚动条](../user-client-modules/Scroll.md)或[分页](../user-client-modules/Page.md)组件。
-
 ---
 
 ## 注意事项

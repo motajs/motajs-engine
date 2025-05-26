@@ -6,7 +6,7 @@
     "scripts": {
         "build:lib": "tsc --noEmit && tsx scripts/build-lib.ts",
         "docs:dev": "concurrently -k -n SIDEBAR,VITEPRESS -c blue,green \"tsx docs/.vitepress/api.ts\" \"vitepress dev docs\"",
-        "docs:build": "tsx docs/.vitepress/api.ts && vitepress build docs",
+        "docs:build": "vitepress build docs",
         "docs:preview": "vitepress preview docs"
     },
     "packageManager": "pnpm@10.10.0",

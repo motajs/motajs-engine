@@ -43,8 +43,6 @@ interface SpriteProps extends BaseProps {
 
 ## 使用示例
 
-以下的示例代码均应该在**组件内部**编写，哪里是组件内部请参考[指南](../../guide/ui.md)。
-
 ### 示例 1：基础图形
 
 ```tsx

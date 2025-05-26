@@ -6,6 +6,7 @@ import api from './apiSidebar';
 export default defineConfig({
     title: 'Motajs Engine',
     description: 'A fast 2D game Engine',
+    base: '/motajs-engine/',
     markdown: {
         math: true,
         config(md) {
