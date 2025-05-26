@@ -1,6 +1,7 @@
 {
     "name": "@motajs/render",
     "version": "0.1.0",
+    "type": "module",
     "main": "dist/render.cjs.js",
     "module": "dist/render.es.js",
     "types": "dist/render.es.d.ts",
