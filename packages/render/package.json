@@ -30,11 +30,6 @@
         "dist"
     ],
     "dependencies": {
-        "@motajs/common": "workspace:*",
-        "@motajs/render-core": "workspace:*",
-        "@motajs/render-elements": "workspace:*",
-        "@motajs/render-style": "workspace:*",
-        "@motajs/render-vue": "workspace:*",
         "eventemitter3": "^5.0.1",
         "gl-matrix": "^3.4.3",
         "lodash-es": "^4.17.21",
