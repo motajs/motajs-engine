@@ -622,7 +622,6 @@ export class MotaRenderer extends Container implements IRenderTreeRoot {
      * @param space 缩进空格数
      */
     toTagTree(space: number = 4) {
-        if (!import.meta.env.DEV) return '';
         return this.toTagString(this, space, 0);
     }
 

@@ -650,10 +650,8 @@ export abstract class RenderItem<E extends ERenderItemEvent = ERenderItemEvent>
     }
 
     update(item: RenderItem<any> = this): void {
-        if (import.meta.env.DEV) {
-            if (this.forbidUpdate) {
-                logger.warn(61, this.constructor.name, this.uid.toString());
-            }
+        if (this.forbidUpdate) {
+            logger.warn(61, this.constructor.name, this.uid.toString());
         }
         if (this._parent) {
             if (this.cacheDirty && this._parent.cacheDirty) return;

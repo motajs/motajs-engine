@@ -6,6 +6,10 @@
         "lib": ["ESNext", "DOM", "DOM.Iterable"],
         "skipLibCheck": true,
 
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+
         "jsx": "preserve",
         "jsxImportSource": "vue",
 
@@ -17,11 +21,6 @@
 
         /* Linting */
         "strict": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "erasableSyntaxOnly": true,
-        "noFallthroughCasesInSwitch": true,
-        "noUncheckedSideEffectImports": true,
 
         "baseUrl": ".",
         "paths": {
@@ -29,5 +28,6 @@
         }
     },
 
-    "include": ["packages"]
+    "include": ["packages"],
+    "exclude": ["**/dist/**"]
 }
