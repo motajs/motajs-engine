@@ -1,4 +1,4 @@
-# UI 元素
+# 渲染元素
 
 本节将会讲解 UI 系统中常用的渲染元素以及基础使用。
 
@@ -367,7 +367,7 @@ const render = (canvas: MotaOffscreenCanvas2D) => {
 
 ## `container-custom` 标签
 
-`container-custom` 是另一种容器，它允许你自定义对子元素的渲染方案，对于特殊场景下有一定的作用，例如样板自带的 `Scroll` 组件就使用此标签实现。它新增了一个 `render` 参数，定义如下：
+`container-custom` 是另一种容器，它允许你自定义对子元素的渲染方案，对于特殊场景下有一定的作用。它新增了一个 `render` 参数，定义如下：
 
 ```ts
 type CustomContainerRenderFn = (
@@ -442,55 +442,13 @@ import { Font } from '@motajs/render';
 
 ## `image` 标签
 
-`image` 标签允许你显示一张图片，包含一个 `image` 属性，传入图片对象（注意不是注册图片名称）。用例如下：
+`image` 标签允许你显示一张图片，包含一个 `image` 属性，传入图片对象。用例如下：
 
 ```tsx
-// 获取注册的图片
-const img = core.material.images.images['myImage.png'];
+// 要显示的图片
+const img = new Image();
 // 显示图片
 <image image={img} />;
-```
-
-## `icon` 标签
-
-`icon` 标签用于显示一个图标，可以包含动画帧。它有如下参数：
-
-```ts
-export interface IconProps extends BaseProps {
-    /** 图标 id 或数字 */
-    icon: AllNumbers | AllIds;
-    /** 显示图标的第几帧 */
-    frame?: number;
-    /** 是否开启动画，开启后 frame 参数无效 */
-    animate?: boolean;
-}
-```
-
-使用案例如下：
-
-```tsx
-// 显示绿史莱姆，开启动画
-<icon icon="greenSlime" animate />
-```
-
-## `winskin` 标签
-
-`winskin` 标签允许你显示一个 rpg maker 风格的背景图（window skin），它有如下参数：
-
-```ts
-export interface WinskinProps extends BaseProps {
-    /** winskin 的图片 id */
-    image: ImageIds;
-    /** 边框大小 */
-    borderSize?: number;
-}
-```
-
-其中边框大小默认为 32，表示上边框和下边框加起来共 32 像素，即四周边框 16 像素宽。用例如下：
-
-```tsx
-// 使用 winskin.png 作为图片，四周边框宽度为 24 像素
-<winskin image="winskin.png" borderSize={48} />
 ```
 
 ## 图形标签
