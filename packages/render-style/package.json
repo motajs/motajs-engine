@@ -1,5 +1,6 @@
 {
     "name": "@motajs/render-style",
+    "private": true,
     "dependencies": {
         "@motajs/common": "workspace:*"
     }

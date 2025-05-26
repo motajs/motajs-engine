@@ -1,3 +1,4 @@
 {
-    "name": "@motajs/common"
+    "name": "@motajs/common",
+    "private": true
 }

@@ -1,5 +1,6 @@
 {
     "name": "@motajs/render-vue",
+    "private": true,
     "dependencies": {
         "@motajs/common": "workspace:*",
         "@motajs/render-core": "workspace:*",
