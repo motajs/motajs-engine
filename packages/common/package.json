@@ -1,4 +1,33 @@
 {
     "name": "@motajs/common",
-    "private": true
+    "version": "0.1.0",
+    "type": "module",
+    "main": "dist/render.cjs.js",
+    "module": "dist/render.es.js",
+    "types": "dist/render.es.d.ts",
+    "keywords": [
+        "render",
+        "game",
+        "vue",
+        "graphics"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/motajs/motajs-engine"
+    },
+    "author": {
+        "name": "AncTe",
+        "email": "1319491857@qq.com"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/render.es.js",
+            "require": "./dist/render.cjs.js",
+            "types": "./dist/render.es.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "license": "LGPL-3.0-only"
 }

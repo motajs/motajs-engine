@@ -6,10 +6,15 @@ import dts from 'vite-plugin-dts';
 const packages = path.resolve(process.cwd(), './packages');
 
 // 获取所有包目录
-const packageDirs = ['render'];
+const packageDirs = ['render', 'common'];
+const buildDict: Record<string, string[]> = {
+    common: [],
+    render: ['render-core', 'render-elements', 'render-style', 'render-vue']
+};
 
 // 构建每一个包
 async function buildPackages() {
+    const packageList = await fs.readdir(packages);
     for (const packageName of packageDirs) {
         const packageDir = path.join(packages, packageName);
         const output = path.join(packageDir, 'dist');
@@ -19,14 +24,20 @@ async function buildPackages() {
             { command: 'build', mode: 'production' },
             configFile
         );
+        const external: string[] = [];
+        packageList.forEach(v => {
+            if (!buildDict[packageName].includes(v)) {
+                external.push(`@motajs/${v}`);
+            }
+        });
+
         const resolved = mergeConfig(config?.config ?? {}, {
             plugins: [
                 dts({
                     entryRoot: path.join(packageDir, 'src/index.ts'),
                     rollupTypes: true,
                     strictOutput: false,
-                    copyDtsFiles: false,
-                    exclude: ['packages-user/**/*']
+                    copyDtsFiles: false
                 })
             ],
             build: {
@@ -38,7 +49,10 @@ async function buildPackages() {
                 },
                 outDir: output,
                 sourcemap: true,
-                emptyOutDir: true
+                emptyOutDir: true,
+                rollupOptions: {
+                    external
+                }
             },
             publicDir: false
         } satisfies UserConfig);
