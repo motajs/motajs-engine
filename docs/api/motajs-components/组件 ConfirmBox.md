@@ -22,18 +22,18 @@ graph LR
 
 本组件完全继承 `TextContent` 组件的参数，参考 [组件 TextContent](./组件%20TextContent.md)
 
-| 属性名       | 类型             | 默认值       | 描述                              |
-| ------------ | ---------------- | ------------ | --------------------------------- |
-| `text`       | `string`         | 必填         | 显示的主文本内容                  |
-| `width`      | `number`         | 必填         | 确认框宽度（像素）                |
-| `loc`        | `ElementLocator` | 必填         | 定位配置                          |
-| `color`      | `CanvasStyle`    | `'#333'`     | 背景颜色（未设置 winskin 时生效） |
-| `border`     | `CanvasStyle`    | `'gold'`     | 边框颜色/样式                     |
-| `selFont`    | `Font`           | 系统默认字体 | 选项按钮字体                      |
-| `selFill`    | `CanvasStyle`    | `'#d48'`     | 选项按钮文本颜色                  |
-| `yesText`    | `string`         | `'是'`       | 确认按钮文本                      |
-| `noText`     | `string`         | `'否'`       | 取消按钮文本                      |
-| `defaultYes` | `boolean`        | `true`       | 默认选中确认按钮                  |
+| 属性名       | 类型             | 默认值       | 描述               |
+| ------------ | ---------------- | ------------ | ------------------ |
+| `text`       | `string`         | 必填         | 显示的主文本内容   |
+| `width`      | `number`         | 必填         | 确认框宽度（像素） |
+| `loc`        | `ElementLocator` | 必填         | 定位配置           |
+| `color`      | `CanvasStyle`    | `'#333'`     | 背景颜色           |
+| `border`     | `CanvasStyle`    | `'gold'`     | 边框颜色/样式      |
+| `selFont`    | `Font`           | 系统默认字体 | 选项按钮字体       |
+| `selFill`    | `CanvasStyle`    | `'#d48'`     | 选项按钮文本颜色   |
+| `yesText`    | `string`         | `'是'`       | 确认按钮文本       |
+| `noText`     | `string`         | `'否'`       | 取消按钮文本       |
+| `defaultYes` | `boolean`        | `true`       | 默认选中确认按钮   |
 
 ---
 

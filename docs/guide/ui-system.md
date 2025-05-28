@@ -113,8 +113,8 @@ myController.showCustom(myCustomMode); // 应用自己的显示模式
 ```ts
 import { Background } from '@motajs/components';
 
-// 传入背景组件作为背景，然后设置参数，使用 winskin.png 作为背景
-myController.setBackground(Background, { winskin: 'winskin.png' });
+// 传入背景组件作为背景，然后设置参数
+myController.setBackground(Background, { color: 'gray' });
 ```
 
 默认情况下，当我们打开 UI 时，背景组件将会自动展示，不过我们也可以手动控制背景组件是否显示，它的优先级高于系统优先级：

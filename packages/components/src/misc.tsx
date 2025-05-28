@@ -294,8 +294,6 @@ const selectionProps = {
 /**
  * 显示一个选择光标，与 2.x 的 drawUIEventSelector 效果一致，参数参考 {@link SelectionProps}，用例如下：
  * ```tsx
- * // 使用 winskin.png 作为选择光标，光标动画的不透明度范围是 [0.3, 0.8]
- * <Selection loc={[24, 24, 80, 16]} winskin="winskin.png" alphaRange={[0.3, 0.8]} />
  * // 使用指定的填充和边框颜色作为选择光标
  * <Selection loc={[24, 24, 80, 16]} color="#ddd" border="gold" />
  * ```
@@ -345,8 +343,6 @@ const backgroundProps = {
 /**
  * 背景组件，与 Selection 类似，不过绘制的是背景，而不是选择光标，参数参考 {@link BackgroundProps}，用例如下：
  * ```tsx
- * // 使用 winskin2.png 作为背景
- * <Background loc={[8, 8, 160, 160]} winskin="winskin2.png" />
  * // 使用指定填充和边框颜色作为背景
  * <Background loc={[8, 8, 160, 160]} color="#333" border="gold" />
  * ```
@@ -417,7 +413,7 @@ const waitBoxProps = {
  *   // 等待框的宽度
  *   width={240}
  *   // 完全继承 Background 的参数，因此可以直接指定背景样式
- *   winskin="winskin2.png"
+ *   color="#fff"
  *   // 完全继承 TextContent 的参数，因此可以直接指定字体
  *   font={new Font('Verdana', 28)}
  *   // 当传入的 Promise 兑现时触发此事件，注意此事件只可能触发一次，触发后便不会再次触发

@@ -32,7 +32,7 @@ graph LR
 | `maxHeight` | `number`         | `360`    | 最大高度（超过时自动分页）            |
 | `text`      | `string`         | -        | 主说明文本（显示在标题下方）          |
 | `title`     | `string`         | -        | 标题文本                              |
-| `color`     | `CanvasStyle`    | `#333`   | 背景颜色（未设置 winskin 时生效）     |
+| `color`     | `CanvasStyle`    | `#333`   | 背景颜色                              |
 | `border`    | `CanvasStyle`    | `gold`   | 边框颜色/样式                         |
 | `selFont`   | `Font`           | 系统默认 | 选项文本字体                          |
 | `selFill`   | `CanvasStyle`    | `#fff`   | 选项文本颜色                          |

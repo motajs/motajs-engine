@@ -64,9 +64,7 @@ const confirmBoxProps = {
  *   width={240}
  *   // 确认框会自动计算宽度和高度，因此不需要手动指定，即使手动指定也无效
  *   loc={[240, 240, void 0, void 0, 0.5, 0.5]}
- *   // 使用 winskin 图片作为背景
- *   winskin="winskin.png"
- *   // 使用颜色作为背景和边框，如果设置了 winskin，那么此参数无效
+ *   // 使用颜色作为背景和边框
  *   color="#333"
  *   border="gold"
  *   // 设置选项的字体
@@ -245,9 +243,7 @@ const choicesProps = {
  *   loc={[240, 240, void 0, void 0, 0.5, 0.5]}
  *   text="请选择一项"
  *   title="选项"
- *   // 使用 winskin 图片作为背景
- *   winskin="winskin.png"
- *   // 使用颜色作为背景和边框，如果设置了 winskin，那么此参数无效
+ *   // 使用颜色作为背景和边框
  *   color="#333"
  *   border="gold"
  *   // 调整每两个选项之间的间隔

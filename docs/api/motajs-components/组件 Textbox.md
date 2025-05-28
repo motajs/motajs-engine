@@ -17,7 +17,7 @@ graph LR
 
 | 属性名         | 类型          | 默认值         | 描述                           |
 | -------------- | ------------- | -------------- | ------------------------------ |
-| `backColor`    | `CanvasStyle` | `#222`         | 背景颜色（与 `winskin` 互斥）  |
+| `backColor`    | `CanvasStyle` | `#222`         | 背景颜色                       |
 | `padding`      | `number`      | `8`            | 内容区域与边框的内边距（像素） |
 | `title`        | `string`      | -              | 标题文本内容                   |
 | `titleFont`    | `Font`        | `18px Verdana` | 标题字体配置                   |
@@ -93,7 +93,6 @@ export const MyCom = defineComponent(() => {
     return () => (
         <Textbox
             title="NPC对话"
-            winskin="winskin.png" // 背景 winskin
             padding={12} // 文字内边距
             width={416} // 最大宽度，超过换行，自动减去内边距
             titleFont={new Font('楷体', 22)} // 标题字体
@@ -142,7 +141,6 @@ export const MyCom = defineComponent(() => {
             <Textbox
                 ref={dialogRef}
                 title={currentTitle.value.toString()}
-                winskin="winskin.png"
                 padding={10}
                 width={416}
                 titleFill="#FF4444"
@@ -163,7 +161,7 @@ graph TB
     Dialog --> Title[标题层]
     Dialog --> Content[内容层]
 
-    Background -->|winskin/backColor| 渲染背景
+    Background -->|backColor| 渲染背景
     Title -->|title 配置| 标题文本
     Content -->|padding 控制| 文字内容
 ```

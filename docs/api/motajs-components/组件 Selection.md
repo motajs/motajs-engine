@@ -41,18 +41,10 @@
 
 ## 注意事项
 
-1. **样式优先级**  
-   同时指定 `winskin` 和颜色参数时：
-
-    ```tsx
-    // 以下配置将忽略 color/border 参数
-    <Selection winskin="winskin.png" color="red" border="blue" />
-    ```
-
-2. **动画速度**  
+1. **动画速度**  
    呼吸动画固定为 2000ms/周期，暂不支持自定义时长
 
-3. **点击反馈**  
+2. **点击反馈**  
    建议配合事件系统实现点击效果：
     ```tsx
     <container onClick={handleClick}>

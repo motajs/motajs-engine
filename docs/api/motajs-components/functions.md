@@ -259,7 +259,6 @@ const chosenId = await getChoice(
     208,
     {
         maxHeight: 400, // 超过 400px 自动分页
-        winskin: 'winskin.png',
         interval: 12
     }
 );
@@ -331,8 +330,7 @@ const userData = await waitbox(
     300,
     fetch('/api/user'),
     {
-        text: '加载用户信息...',
-        winskin: 'ui/loading_panel'
+        text: '加载用户信息...'
     }
 );
 ```

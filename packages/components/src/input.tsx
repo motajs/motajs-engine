@@ -300,9 +300,7 @@ const inputBoxProps = {
  *   width={240}
  *   // 输入框会自动计算宽度和高度，因此不需要手动指定，即使手动指定也无效
  *   loc={[240, 240, void 0, void 0, 0.5, 0.5]}
- *   // 使用 winskin 图片作为背景
- *   winskin="winskin.png"
- *   // 使用颜色作为背景和边框，如果设置了 winskin，那么此参数无效
+ *   // 使用颜色作为背景和边框
  *   color="#333"
  *   border="gold"
  *   // 设置选项的字体
