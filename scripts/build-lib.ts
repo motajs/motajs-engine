@@ -18,6 +18,9 @@ const externalPackage = [
     'eventemitter3',
     'vue'
 ];
+const includeDeclare: Record<string, boolean> = {
+    render: true
+};
 
 // 构建每一个包
 async function buildPackages() {
@@ -62,7 +65,10 @@ async function buildPackages() {
             {
                 filePath: path.join(packageDir, 'src/index.ts'),
                 output: {
-                    inlineDeclareExternals: true
+                    inlineDeclareExternals: !!includeDeclare[packageName]
+                },
+                libraries: {
+                    importedLibraries: external.concat(externalPackage)
                 }
             }
         ]);

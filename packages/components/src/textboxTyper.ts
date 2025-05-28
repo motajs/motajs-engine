@@ -5,7 +5,7 @@ import {
     MotaOffscreenCanvas2D,
     CanvasStyle
 } from '@motajs/render';
-import EventEmitter from 'eventemitter3';
+import { EventEmitter } from 'eventemitter3';
 import { isNil } from 'lodash-es';
 
 /** 文字的安全填充，会填充在文字的上侧和下侧，防止削顶和削底 */

@@ -72,6 +72,30 @@ importers:
 
   packages/common: {}
 
+  packages/components:
+    dependencies:
+      '@motajs/common':
+        specifier: workspace:*
+        version: link:../common
+      '@motajs/render':
+        specifier: workspace:*
+        version: link:../render
+      '@motajs/system-ui':
+        specifier: workspace:*
+        version: link:../system-ui
+      eventemitter3:
+        specifier: ^5.0.1
+        version: 5.0.1
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
+      mutate-animate:
+        specifier: ^1.4.2
+        version: 1.4.2
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.15(typescript@5.8.3)
+
   packages/render:
     dependencies:
       '@motajs/common':
@@ -135,6 +159,15 @@ importers:
       '@motajs/render-style':
         specifier: workspace:*
         version: link:../render-style
+
+  packages/system-ui:
+    dependencies:
+      '@motajs/common':
+        specifier: workspace:*
+        version: link:../common
+      '@motajs/render':
+        specifier: workspace:*
+        version: link:../render
 
 packages:
 

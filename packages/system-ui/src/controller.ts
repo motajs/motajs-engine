@@ -1,5 +1,5 @@
 import { logger } from '@motajs/common';
-import EventEmitter from 'eventemitter3';
+import { EventEmitter } from 'eventemitter3';
 import {
     IGameUI,
     IKeepController,
