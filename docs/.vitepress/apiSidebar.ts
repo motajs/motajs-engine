@@ -6,6 +6,24 @@ export default [
         "link": "/api/"
     },
     {
+        "text": "motajs-common",
+        "collapsed": true,
+        "items": [
+            {
+                "text": "主页",
+                "link": "/api/motajs-common/index.md"
+            },
+            {
+                "text": "函数",
+                "link": "/api/motajs-common/functions.md"
+            },
+            {
+                "text": "Logger",
+                "link": "/api/motajs-common/Logger.md"
+            }
+        ]
+    },
+    {
         "text": "motajs-render",
         "collapsed": true,
         "items": [
@@ -166,10 +184,6 @@ export default [
                 "link": "/api/motajs-render-vue/标签 g-rectr.md"
             },
             {
-                "text": "标签 icon",
-                "link": "/api/motajs-render-vue/标签 icon.md"
-            },
-            {
                 "text": "标签 image",
                 "link": "/api/motajs-render-vue/标签 image.md"
             },
@@ -180,10 +194,6 @@ export default [
             {
                 "text": "标签 text",
                 "link": "/api/motajs-render-vue/标签 text.md"
-            },
-            {
-                "text": "标签 winskin",
-                "link": "/api/motajs-render-vue/标签 winskin.md"
             }
         ]
     }

@@ -2,14 +2,11 @@
     "name": "@motajs/common",
     "version": "0.1.0",
     "type": "module",
-    "main": "dist/render.cjs.js",
-    "module": "dist/render.es.js",
-    "types": "dist/render.es.d.ts",
+    "main": "dist/common.cjs.js",
+    "module": "dist/common.es.js",
+    "types": "dist/common.es.d.ts",
     "keywords": [
-        "render",
-        "game",
-        "vue",
-        "graphics"
+        "game"
     ],
     "repository": {
         "type": "git",
