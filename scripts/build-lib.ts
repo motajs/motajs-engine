@@ -15,7 +15,8 @@ const externalPackage = [
     'mutate-animate',
     'lodash-es',
     'gl-matrix',
-    'eventemitter3'
+    'eventemitter3',
+    'vue'
 ];
 
 // 构建每一个包
