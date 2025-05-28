@@ -79,8 +79,6 @@ interface LineProps extends GraphicBaseProps {
 ### 示例 3：动态线段（动画）
 
 ```tsx
-import { transitioned } from '@user/client-modules';
-
 // 创建渐变
 const x2 = transitioned(100, 2000, linear());
 x2.set(400); // 终点横坐标从 100 变到 400
