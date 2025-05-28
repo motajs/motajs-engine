@@ -24,6 +24,80 @@ export default [
         ]
     },
     {
+        "text": "motajs-components",
+        "collapsed": true,
+        "items": [
+            {
+                "text": "主页",
+                "link": "/api/motajs-components/index.md"
+            },
+            {
+                "text": "函数",
+                "link": "/api/motajs-components/functions.md"
+            },
+            {
+                "text": "TextboxStore",
+                "link": "/api/motajs-components/TextboxStore.md"
+            },
+            {
+                "text": "TextContentParser",
+                "link": "/api/motajs-components/TextContentParser.md"
+            },
+            {
+                "text": "TextContentTyper",
+                "link": "/api/motajs-components/TextContentTyper.md"
+            },
+            {
+                "text": "组件 Arrow",
+                "link": "/api/motajs-components/组件 Arrow.md"
+            },
+            {
+                "text": "组件 Background",
+                "link": "/api/motajs-components/组件 Background.md"
+            },
+            {
+                "text": "组件 Choices",
+                "link": "/api/motajs-components/组件 Choices.md"
+            },
+            {
+                "text": "组件 ConfirmBox",
+                "link": "/api/motajs-components/组件 ConfirmBox.md"
+            },
+            {
+                "text": "组件 Page",
+                "link": "/api/motajs-components/组件 Page.md"
+            },
+            {
+                "text": "组件 Progress",
+                "link": "/api/motajs-components/组件 Progress.md"
+            },
+            {
+                "text": "组件 Scroll",
+                "link": "/api/motajs-components/组件 Scroll.md"
+            },
+            {
+                "text": "组件 ScrollText",
+                "link": "/api/motajs-components/组件 ScrollText.md"
+            },
+            {
+                "text": "组件 Selection",
+                "link": "/api/motajs-components/组件 Selection.md"
+            },
+            {
+                "text": "组件 Textbox",
+                "link": "/api/motajs-components/组件 Textbox.md"
+            },
+            {
+                "text": "组件 TextContent",
+                "link": "/api/motajs-components/组件 TextContent.md"
+            },
+            {
+                "text": "组件 Waitbox",
+                "link": "/api/motajs-components/组件 Waitbox.md"
+            }
+        ]
+    },
+    {
         "text": "motajs-render",
         "collapsed": true,
         "items": [
@@ -194,6 +268,28 @@ export default [
             {
                 "text": "标签 text",
                 "link": "/api/motajs-render-vue/标签 text.md"
+            }
+        ]
+    },
+    {
+        "text": "motajs-system-ui",
+        "collapsed": true,
+        "items": [
+            {
+                "text": "主页",
+                "link": "/api/motajs-system-ui/index.md"
+            },
+            {
+                "text": "GameUI",
+                "link": "/api/motajs-system-ui/GameUI.md"
+            },
+            {
+                "text": "UIController",
+                "link": "/api/motajs-system-ui/UIController.md"
+            },
+            {
+                "text": "UIInstance",
+                "link": "/api/motajs-system-ui/UIInstance.md"
             }
         ]
     }
