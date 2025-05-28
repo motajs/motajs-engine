@@ -6,7 +6,7 @@ import {
     ReservedProps,
     VNodeProps
 } from 'vue';
-import EventEmitter from 'eventemitter3';
+import { EventEmitter } from 'eventemitter3';
 import {
     BaseProps,
     BezierProps,
@@ -73,7 +73,7 @@ export type TagDefine<T extends object, E extends ERenderItemEvent> = T &
     ReservedProps;
 
 declare module 'vue/jsx-runtime' {
-    namespace JSX {
+    export namespace JSX {
         export interface IntrinsicElements {
             sprite: TagDefine<SpriteProps, ESpriteEvent>;
             container: TagDefine<ContainerProps, EContainerEvent>;

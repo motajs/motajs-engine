@@ -1,7 +1,7 @@
 import { build, loadConfigFromFile, mergeConfig, UserConfig } from 'vite';
 import path from 'path';
 import fs from 'fs-extra';
-import dts from 'vite-plugin-dts';
+import { generateDtsBundle } from 'dts-bundle-generator';
 
 const packages = path.resolve(process.cwd(), './packages');
 
@@ -32,14 +32,6 @@ async function buildPackages() {
         });
 
         const resolved = mergeConfig(config?.config ?? {}, {
-            plugins: [
-                dts({
-                    entryRoot: path.join(packageDir, 'src/index.ts'),
-                    rollupTypes: true,
-                    strictOutput: false,
-                    copyDtsFiles: false
-                })
-            ],
             build: {
                 lib: {
                     entry: path.join(packageDir, 'src/index.ts'),
@@ -58,6 +50,19 @@ async function buildPackages() {
         } satisfies UserConfig);
 
         await build(resolved);
+        const [result] = generateDtsBundle([
+            {
+                filePath: path.join(packageDir, 'src/index.ts'),
+                output: {
+                    inlineDeclareExternals: true
+                }
+            }
+        ]);
+        await fs.writeFile(
+            path.join(output, `${packageName}.es.d.ts`),
+            result,
+            'utf-8'
+        );
         console.log(`✅ Package ${packageName} built successfully.`);
     }
     const dirs = await fs.readdir(packages);

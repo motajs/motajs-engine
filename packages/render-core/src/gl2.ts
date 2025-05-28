@@ -1,4 +1,4 @@
-import EventEmitter from 'eventemitter3';
+import { EventEmitter } from 'eventemitter3';
 import { logger } from '@motajs/common';
 import { MotaOffscreenCanvas2D } from './canvas2d';
 import { ERenderItemEvent, RenderItem, RenderItemPosition } from './item';

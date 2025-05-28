@@ -1,7 +1,7 @@
 import { Animation, Ticker, Transition } from 'mutate-animate';
 import { ERenderItemEvent, RenderItem } from '@motajs/render-core';
 import { onMounted, onUnmounted } from 'vue';
-import EventEmitter from 'eventemitter3';
+import { EventEmitter } from 'eventemitter3';
 
 const ticker = new Ticker();
 
