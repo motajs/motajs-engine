@@ -9,7 +9,8 @@
         "render",
         "game",
         "vue",
-        "graphics"
+        "graphics",
+        "ui"
     ],
     "repository": {
         "type": "git",

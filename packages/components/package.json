@@ -1,0 +1,45 @@
+{
+    "name": "@motajs/components",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "dist/components.cjs.js",
+    "module": "dist/components.es.js",
+    "types": "dist/components.es.d.ts",
+    "keywords": [
+        "render",
+        "game",
+        "vue",
+        "graphics",
+        "ui",
+        "components"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/motajs/motajs-engine"
+    },
+    "author": {
+        "name": "AncTe",
+        "email": "1319491857@qq.com"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/components.es.js",
+            "require": "./dist/components.cjs.js",
+            "types": "./dist/components.es.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "lodash-es": "^4.17.21",
+        "mutate-animate": "^1.4.2",
+        "eventemitter3": "^5.0.1"
+    },
+    "peerDependencies": {
+        "vue": "^3.5.13",
+        "@motajs/system-ui": "workspace:*",
+        "@motajs/common": "workspace:*",
+        "@motajs/render": "workspace:*"
+    }
+}

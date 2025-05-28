@@ -6,11 +6,17 @@ import { generateDtsBundle } from 'dts-bundle-generator';
 const packages = path.resolve(process.cwd(), './packages');
 
 // 获取所有包目录
-const packageDirs = ['render', 'common'];
+const packageDirs = ['render', 'common', 'system-ui', 'components'];
 const buildDict: Record<string, string[]> = {
     common: [],
     render: ['render-core', 'render-elements', 'render-style', 'render-vue']
 };
+const externalPackage = [
+    'mutate-animate',
+    'lodash-es',
+    'gl-matrix',
+    'eventemitter3'
+];
 
 // 构建每一个包
 async function buildPackages() {
@@ -26,7 +32,8 @@ async function buildPackages() {
         );
         const external: string[] = [];
         packageList.forEach(v => {
-            if (!buildDict[packageName].includes(v)) {
+            const built = buildDict[packageName] ?? [];
+            if (!built.includes(v)) {
                 external.push(`@motajs/${v}`);
             }
         });
@@ -43,7 +50,7 @@ async function buildPackages() {
                 sourcemap: true,
                 emptyOutDir: true,
                 rollupOptions: {
-                    external
+                    external: external.concat(externalPackage)
                 }
             },
             publicDir: false
