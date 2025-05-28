@@ -1,6 +1,6 @@
 {
     "name": "@motajs/common",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "module",
     "main": "dist/common.cjs.js",
     "module": "dist/common.es.js",
@@ -18,9 +18,9 @@
     },
     "exports": {
         ".": {
-            "import": "./dist/render.es.js",
-            "require": "./dist/render.cjs.js",
-            "types": "./dist/render.es.d.ts"
+            "import": "./dist/common.es.js",
+            "require": "./dist/common.cjs.js",
+            "types": "./dist/common.es.d.ts"
         }
     },
     "files": [

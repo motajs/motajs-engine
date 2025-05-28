@@ -1,0 +1,36 @@
+{
+    "name": "@motajs/system-ui",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "dist/system-ui.cjs.js",
+    "module": "dist/system-ui.es.js",
+    "types": "dist/system-ui.es.d.ts",
+    "keywords": [
+        "render",
+        "game",
+        "vue",
+        "graphics"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/motajs/motajs-engine"
+    },
+    "author": {
+        "name": "AncTe",
+        "email": "1319491857@qq.com"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/system-ui.es.js",
+            "require": "./dist/system-ui.cjs.js",
+            "types": "./dist/system-ui.es.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "peerDependencies": {
+        "@motajs/common": "workspace:*",
+        "@motajs/render": "workspace:*"
+    }
+}
