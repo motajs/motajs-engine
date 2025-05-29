@@ -8,10 +8,10 @@
 
 ### 创建 UIController 实例
 
-我们从 `@motajs/system-ui` 引入 `UIController` 类，然后对其实例化：
+我们从 `@motajs/client` 引入 `UIController` 类，然后对其实例化：
 
 ```ts
-import { UIController } from '@motajs/system-ui';
+import { UIController } from '@motajs/client';
 
 // 传入一个字符串来表示这个控制器的 id
 export const myController = new UIController('my-controller');
@@ -22,7 +22,7 @@ export const myController = new UIController('my-controller');
 可以通过 id 来获取到这个控制器，或者直接引入对应文件中的控制器：
 
 ```ts
-import { UIController } from '@motajs/system-ui';
+import { UIController } from '@motajs/client';
 import { myController } from './myController';
 
 const myController = UIController.get('my-controller');
@@ -79,7 +79,7 @@ myController.lastOnly(false);
 那么，假如我们要做一个反向 `lastOnly`，即只显示第一个，添加 UI 时添加至队列开头，我们可以这么写：
 
 ```ts
-import { IUICustomConfig, IUIInstance } from '@motajs/system-ui';
+import { IUICustomConfig, IUIInstance } from '@motajs/client';
 
 const myCustomMode: IUICustomConfig = {
     open(ins: IUIInstance, stack: IUIInstance[]) {
@@ -108,10 +108,10 @@ myController.showCustom(myCustomMode); // 应用自己的显示模式
 
 ## 设置 UI 背景
 
-我们可以为 UI 设置背景组件，背景组件在 UI 打开时常亮。我们推荐使用此方法来为 UI 设置背景，因为它可以搭配 `keep` 防抖动来使用，避免出现 UI 闪烁的问题。现在，我们使用 `@motajs/components` 中的 `Background` 背景组件作为例子，来展示如何设置背景：
+我们可以为 UI 设置背景组件，背景组件在 UI 打开时常亮。我们推荐使用此方法来为 UI 设置背景，因为它可以搭配 `keep` 防抖动来使用，避免出现 UI 闪烁的问题。现在，我们使用 `@motajs/client` 中的 `Background` 背景组件作为例子，来展示如何设置背景：
 
 ```ts
-import { Background } from '@motajs/components';
+import { Background } from '@motajs/client';
 
 // 传入背景组件作为背景，然后设置参数
 myController.setBackground(Background, { color: 'gray' });

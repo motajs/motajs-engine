@@ -31,7 +31,7 @@
 
 ```tsx
 import { defineComponent, ref } from 'vue';
-import { onTick } from '@motajs/render';
+import { onTick } from '@motajs/client';
 
 export const MyCom = defineComponent(() => {
     // 创建响应式进度值

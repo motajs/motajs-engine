@@ -81,7 +81,7 @@ if (ui) {
 
 ```tsx
 import { defineComponent } from 'vue';
-import { GameUI } from '@motajs/system-ui';
+import { GameUI } from '@motajs/client';
 
 // 定义组件
 export const MyCom = defineComponent(() => {

@@ -62,7 +62,7 @@ function render(): VNode;
 
 ```tsx
 import { defineComponent } from 'vue';
-import { UIController } from '@motajs/system-ui';
+import { UIController } from '@motajs/client';
 
 export const myController = new UIController('my-controller');
 

@@ -57,7 +57,7 @@ interface BaseProps {
 
 ```tsx
 import { defineComponent } from 'vue';
-import { Transform } from '@motajs/render-core';
+import { Transform } from '@motajs/client';
 
 // 注意，以下属性均可选，按照自己需要填写即可，不需要的可以不用填，简单需求一般只需要修改定位
 // 而复杂需求可能需要填写更多的参数，但是基本不会出现所有参数都要填的场景

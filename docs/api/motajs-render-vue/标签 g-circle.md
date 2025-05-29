@@ -141,7 +141,7 @@ Math.PI (180°) ——+—— 0 (0°)
 
 ```tsx
 import { ref } from 'vue';
-import { onTick } from '@motajs/render-vue';
+import { onTick } from '@motajs/client';
 
 const progress = ref(0);
 

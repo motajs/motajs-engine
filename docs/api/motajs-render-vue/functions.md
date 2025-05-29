@@ -116,7 +116,7 @@ onEvent(sprite, 'click', event => {
 
 ```tsx
 import { defineComponent } from 'vue';
-import { useAnimation, onTick, useKey } from '@motajs/render-vue';
+import { useAnimation, onTick, useKey } from '@motajs/client';
 
 export const MyComponent = defineComponent(() => {
     // 动画控制

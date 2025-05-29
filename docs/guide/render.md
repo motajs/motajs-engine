@@ -2,26 +2,12 @@
 
 渲染系统基于 vue 制作，可以利用 vue 的响应式特性在画布上实现与 DOM 树类似的渲染功能，对于游戏来说非常方便。
 
-## 安装
-
-:::code-group
-
-```bash [npm]
-npm i @motajs/render
-```
-
-```bash [pnpm]
-pnpm add @motajs/render
-```
-
-:::
-
 ## 基本示例
 
 ### 创建渲染器
 
 ```ts
-import { MotaRenderer } from '@motajs/render';
+import { MotaRenderer } from '@motajs/client';
 
 const main = new MotaRenderer({
     canvas: '#main',
@@ -35,22 +21,23 @@ const main = new MotaRenderer({
 :::code-group
 
 ```ts [原生ts]
-import { Text } from '@motajs/text';
+import { Text } from '@motajs/client';
 
 const text = new Text('测试文本');
 text.pos(100, 100);
+text.setStyle('black');
 
 main.appendChild(text);
 ```
 
 ```tsx [tsx]
-import { createApp } from '@motajs/render';
+import { createApp } from '@motajs/client';
 import { defineComponent } from 'vue';
 
 const RootComponent = defineComponent(() => {
     return () => (
         <container>
-            <text text="测试文本" />
+            <text fillStyle="black" text="测试文本" />
         </container>
     );
 });

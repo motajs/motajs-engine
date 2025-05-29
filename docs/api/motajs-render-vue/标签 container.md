@@ -35,7 +35,7 @@ interface ContainerProps extends BaseProps {} // 无新增属性，完全继承 
 
 ```tsx
 import { ref } from 'vue';
-import { Font } from '@motajs/render-style';
+import { Font } from '@motajs/client';
 
 const count = ref(0);
 const boldFont = new Font('Verdana', 18, 'px', 700);

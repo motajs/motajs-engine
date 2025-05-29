@@ -32,7 +32,7 @@ interface TextProps extends BaseProps {
 ### 1. 基本文本渲染
 
 ```tsx
-import { Font } from '@motajs/render-style';
+import { Font } from '@motajs/client';
 
 <text
     loc={[100, 50]}
@@ -53,7 +53,7 @@ import { Font } from '@motajs/render-style';
 ### 2. 描边文字 + 填充组合
 
 ```tsx
-import { Font } from '@motajs/render-style';
+import { Font } from '@motajs/client';
 
 <text
     loc={[200, 300]} // x=200, y=300
@@ -77,7 +77,7 @@ import { Font } from '@motajs/render-style';
 
 ```tsx
 import { ref } from 'vue';
-import { Font } from '@motajs/render-style';
+import { Font } from '@motajs/client';
 
 // Vue3 组件示例
 const count = ref(0);
@@ -126,7 +126,7 @@ onTick(() => {
 ### 文字阴影 + 滤镜
 
 ```tsx
-import { Font } from '@motajs/render-style';
+import { Font } from '@motajs/client';
 
 <text
     x={300}

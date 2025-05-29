@@ -109,7 +109,7 @@ export const MyCom = defineComponent(() => {
 
 ```tsx
 import { defineComponent } from 'vue';
-import { onTick } from '@motajs/render';
+import { onTick } from '@motajs/client';
 
 export const MyCom = defineComponent(() => {
     const dynamicOptions = ref<ChoiceItem[]>([]);

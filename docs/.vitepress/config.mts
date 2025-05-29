@@ -18,7 +18,7 @@ export default defineConfig({
         outline: [2, 3],
         nav: [
             { text: '主页', link: '/' },
-            { text: '指南', link: '/guide/render' },
+            { text: '指南', link: '/guide/' },
             { text: 'API', link: '/api/' }
         ],
         sidebar: {
@@ -26,6 +26,10 @@ export default defineConfig({
                 {
                     text: '深度指南',
                     items: [
+                        {
+                            text: '安装',
+                            link: '/guide/'
+                        },
                         {
                             text: '渲染系统',
                             collapsed: false,
@@ -39,7 +43,8 @@ export default defineConfig({
                                     text: '渲染元素',
                                     link: '/guide/render-elements'
                                 },
-                                { text: '常见问题', link: '/guide/render-faq' }
+                                { text: '常见问题', link: '/guide/render-faq' },
+                                { text: 'UI 系统', link: '/guide/ui-system' }
                             ]
                         }
                     ]

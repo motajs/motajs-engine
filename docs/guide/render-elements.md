@@ -192,7 +192,7 @@ $Transform=\begin{bmatrix} a & b & 0 \\ c & d & 0 \\ e & f & 1 \end{bmatrix}$
 首先创建其实例：
 
 ```ts
-import { Transform } from '@motajs/render';
+import { Transform } from '@motajs/client';
 
 const trans = new Transform();
 ```
@@ -275,7 +275,7 @@ const localPos = trans.untransformed(150, 80);
 使用自动更新机制：
 
 ```ts
-import { ITransformUpdatable } from '@motajs/render';
+import { ITransformUpdatable } from '@motajs/client';
 
 // 绑定可更新对象
 class MyElement implements ITransformUpdatable {
@@ -420,7 +420,7 @@ interface TextProps extends BaseProps {
 典型案例如下：
 
 ```tsx
-import { Font } from '@motajs/render';
+import { Font } from '@motajs/client';
 
 <text
     // 文字内容

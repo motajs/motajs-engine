@@ -135,8 +135,7 @@ function getConfirm(
 
 ```tsx
 import { defineComponent } from 'vue';
-import { DefaultProps } from '@motajs/render';
-import { GameUI } from '@motajs/system-ui';
+import { DefaultProps, GameUI } from '@motajs/client';
 
 // 在业务逻辑中调用，注意，组件需要使用 UI 控制器打开，它会自动传递 controller 参数
 const MyCom = defineComponent<DefaultProps>(props => {

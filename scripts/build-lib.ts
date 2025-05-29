@@ -6,7 +6,7 @@ import { generateDtsBundle } from 'dts-bundle-generator';
 const packages = path.resolve(process.cwd(), './packages');
 
 // 获取所有包目录
-const packageDirs = ['render', 'common', 'system-ui', 'components'];
+const packageDirs = ['render', 'common', 'system-ui', 'components', 'client'];
 const buildDict: Record<string, string[]> = {
     common: [],
     render: ['render-core', 'render-elements', 'render-style', 'render-vue']

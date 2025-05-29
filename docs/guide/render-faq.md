@@ -17,7 +17,7 @@
 你可能在使用 `sprite` 元素，然后在渲染函数里面调用了外部数据，这样的话当外部数据更新时，你的 `sprite` 元素并不会自动更新，需要手动更新。手动更新参考代码：
 
 ```tsx
-import { Sprite } from '@motajs/render';
+import { Sprite } from '@motajs/client';
 
 const mySprite = ref<Sprite>();
 // 数据更新时，同时更新 sprite 元素

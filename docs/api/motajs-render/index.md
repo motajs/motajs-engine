@@ -11,6 +11,6 @@
 
 ```ts
 // 二者等价
+import { Container } from '@motajs/client';
 import { Container } from '@motajs/render';
-import { Container } from '@motajs/render-core';
 ```

@@ -46,7 +46,7 @@ interface SpriteProps extends BaseProps {
 ### 示例 1：基础图形
 
 ```tsx
-import { MotaOffscreenCanvas2D } from '@motajs/render-core';
+import { MotaOffscreenCanvas2D } from '@motajs/client';
 
 // 绘制旋转了 45 度的彩色方块
 const render = (canvas: MotaOffscreenCanvas2D) => {
@@ -75,7 +75,7 @@ const render = (canvas: MotaOffscreenCanvas2D) => {
 
 ```tsx
 import { ref } from 'vue';
-import { useAnimation } from '@motajs/render-vue';
+import { useAnimation } from '@motajs/client';
 
 // 平移动画 + 动态缩放
 const [anim] = useAnimation();

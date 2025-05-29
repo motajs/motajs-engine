@@ -62,7 +62,7 @@
 
 ```tsx
 import { defineComponent } from 'vue';
-import { Font } from '@motajs/render';
+import { Font } from '@motajs/client';
 
 export const MyCom = defineComponent(() => {
     return () => (
@@ -81,7 +81,7 @@ export const MyCom = defineComponent(() => {
 
 ```tsx
 import { defineComponent } from 'vue';
-import { Font } from '@motajs/render';
+import { Font } from '@motajs/client';
 
 export const MyCom = defineComponent(() => {
     return () => (
