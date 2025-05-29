@@ -19,7 +19,8 @@ const externalPackage = [
     'vue'
 ];
 const includeDeclare: Record<string, boolean> = {
-    render: true
+    render: true,
+    client: true
 };
 
 // 构建每一个包
