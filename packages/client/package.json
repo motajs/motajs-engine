@@ -1,6 +1,6 @@
 {
     "name": "@motajs/client",
-    "version": "0.1.0",
+    "version": "0.1.0-alpha",
     "type": "module",
     "main": "dist/client.cjs.js",
     "module": "dist/client.es.js",
