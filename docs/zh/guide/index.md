@@ -7,11 +7,11 @@
 :::code-group
 
 ```bash [npm]
-npm i @motajs/client
+npm i vue @motajs/client
 ```
 
 ```bash [pnpm]
-pnpm add @motajs/client
+pnpm add vue @motajs/client
 ```
 
 :::
