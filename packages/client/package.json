@@ -1,0 +1,48 @@
+{
+    "name": "@motajs/client",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "dist/client.cjs.js",
+    "module": "dist/client.es.js",
+    "types": "dist/client.es.d.ts",
+    "keywords": [
+        "render",
+        "game",
+        "vue",
+        "graphics",
+        "ui",
+        "components",
+        "engine",
+        "client"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/motajs/motajs-engine"
+    },
+    "author": {
+        "name": "AncTe",
+        "email": "1319491857@qq.com"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/client.es.js",
+            "require": "./dist/client.cjs.js",
+            "types": "./dist/client.es.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "lodash-es": "^4.17.21",
+        "mutate-animate": "^1.4.2",
+        "eventemitter3": "^5.0.1",
+        "@motajs/system-ui": "workspace:*",
+        "@motajs/render": "workspace:*",
+        "@motajs/common": "workspace:*",
+        "@motajs/components": "workspace:*"
+    },
+    "peerDependencies": {
+        "vue": "^3.5.13"
+    }
+}
