@@ -9,10 +9,10 @@ hero:
     actions:
         - theme: brand
           text: Guide
-          link: /guide/
+          link: /en/guide/
         - theme: alt
           text: API
-          link: /api
+          link: /en/api/
 
 features:
     - title: Fast
