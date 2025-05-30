@@ -1,6 +1,6 @@
 {
     "name": "@motajs/components",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "type": "module",
     "main": "dist/components.cjs.js",
     "module": "dist/components.es.js",
@@ -41,5 +41,6 @@
         "@motajs/system-ui": "workspace:*",
         "@motajs/common": "workspace:*",
         "@motajs/render": "workspace:*"
-    }
+    },
+    "license": "LGPL-3.0-only"
 }

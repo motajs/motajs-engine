@@ -1,6 +1,6 @@
 {
     "name": "@motajs/client",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "module",
     "main": "dist/client.cjs.js",
     "module": "dist/client.es.js",
@@ -13,7 +13,9 @@
         "ui",
         "components",
         "engine",
-        "client"
+        "client",
+        "front-end",
+        "framework"
     ],
     "repository": {
         "type": "git",
@@ -44,5 +46,6 @@
     },
     "peerDependencies": {
         "vue": "^3.5.13"
-    }
+    },
+    "license": "LGPL-3.0-only"
 }
