@@ -46,12 +46,12 @@ export default defineConfig({
                                             link: '/zh/guide/render'
                                         },
                                         {
-                                            text: '渲染优化',
-                                            link: '/zh/guide/render-perf'
-                                        },
-                                        {
                                             text: '渲染元素',
                                             link: '/zh/guide/render-elements'
+                                        },
+                                        {
+                                            text: '渲染优化',
+                                            link: '/zh/guide/render-perf'
                                         },
                                         {
                                             text: '常见问题',
@@ -135,12 +135,12 @@ export default defineConfig({
                                             link: '/en/guide/render'
                                         },
                                         {
-                                            text: 'Optimization',
-                                            link: '/en/guide/render-perf'
-                                        },
-                                        {
                                             text: 'Elements',
                                             link: '/en/guide/render-elements'
+                                        },
+                                        {
+                                            text: 'Optimization',
+                                            link: '/en/guide/render-perf'
                                         },
                                         {
                                             text: 'FAQ',

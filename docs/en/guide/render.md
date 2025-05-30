@@ -1,10 +1,12 @@
-# 渲染系统
+# Rendering System
 
-渲染系统基于 vue 制作，可以利用 vue 的响应式特性在画布上实现与 DOM 树类似的渲染功能，对于游戏来说非常方便。
+_This document is translated by DeepSeek._
 
-## 基本示例
+The rendering system is built on Vue, leveraging its reactive features to provide DOM-like rendering capabilities on the canvas, making it highly convenient for game development.
 
-### 创建渲染器
+## Basic Examples
+
+### Creating a Renderer
 
 ```ts
 import { MotaRenderer } from '@motajs/client';
@@ -16,28 +18,28 @@ const main = new MotaRenderer({
 });
 ```
 
-### 渲染内容
+### Rendering Content
 
 :::code-group
 
-```ts [原生ts]
+```ts [Vanilla TS]
 import { Text } from '@motajs/client';
 
-const text = new Text('测试文本');
+const text = new Text('Test Text');
 text.pos(100, 100);
 text.setStyle('black');
 
 main.appendChild(text);
 ```
 
-```tsx [tsx]
+```tsx [TSX]
 import { createApp } from '@motajs/client';
 import { defineComponent } from 'vue';
 
 const RootComponent = defineComponent(() => {
     return () => (
         <container>
-            <text fillStyle="black" text="测试文本" />
+            <text fillStyle="black" text="Test Text" />
         </container>
     );
 });
@@ -47,11 +49,11 @@ createApp(RootComponent).mount(main);
 
 :::
 
-### 配置 vite 使用 tsx
+### Configuring Vite for TSX
 
-你需要先安装 `@vitejs/plugin-vue-jsx`，如果你不使用 vue sfc 的话，可以不安装 `@vitejs/plugin-vue`。
+First, install `@vitejs/plugin-vue-jsx`. If you're not using Vue SFCs, you can skip installing `@vitejs/plugin-vue`.
 
-然后在配置中调用插件，并配置自定义元素：
+Then, enable the plugin in your configuration and define custom elements:
 
 ```ts
 import { defineConfig } from 'vite';
@@ -79,6 +81,6 @@ export default defineConfig({
 });
 ```
 
-## 深入使用
+## Advanced Usage
 
-请查看 [渲染元素](./render-elements.md)。
+Refer to [Rendering Elements](./render-elements.md).

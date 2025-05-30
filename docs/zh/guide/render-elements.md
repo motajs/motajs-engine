@@ -47,7 +47,7 @@ type ElementLocator = [
 <sprite x={32} y={32} width={64} height={64} anchorX={0.5} anchorY={0.5} />
 ```
 
-最后说明一下元素的 `type` 属性，此属性描述了元素的定位模式，默认为 `static` 常规定位，此定位模式下元素位置会按照上述内容更改，而在 `absolute` 模式下，不论怎么修改定位属性，它都会保持在左上角的位置，可能会在一些特殊场景下使用（极度不建议使用此属性，很可能在 2.B.1 版本就会将其删除）。
+最后说明一下元素的 `type` 属性，此属性描述了元素的定位模式，默认为 `static` 常规定位，此定位模式下元素位置会按照上述内容更改，而在 `absolute` 模式下，不论怎么修改定位属性，它都会保持在左上角的位置，可能会在一些特殊场景下使用（极度不建议使用此属性，很可能在未来版本将其删除）。
 
 ### 纵深属性
 
@@ -141,8 +141,6 @@ const hidden = ref(false);
 <sprite hd={false} />
 // 关闭抗锯齿
 <sprite noanti />
-// 启用地图渲染的抗锯齿
-<layer anti />
 ```
 
 ### 元素变换属性
@@ -159,33 +157,6 @@ const hidden = ref(false);
 使用上面这种方式时，没有办法指定变换的顺序。一般情况下，变换的顺序将会影响结果，例如先旋转，再放缩，和先放缩，再旋转，其结果是不同的。下面我们来讲解一下图形学中的 2D 矩阵变换的基本概念，以及如何使用 `transform` 属性。
 
 ### Transform 矩阵变换
-
-大部分情况下用不到此属性，此属性理解难度较大，如果不是必须使用此属性，可以不看此小节。以下矩阵变换内容由 `DeepSeek R1` 模型生成，并稍作修改。
-
-#### 为什么需要变换矩阵？
-
-在 2D 图形学中，变换矩阵（3x3）可以统一表示以下基本变换操作：
-
--   平移（Translation）
--   旋转（Rotation）
--   缩放（Scale）
--   错切（Skew）
-
-通过矩阵乘法可以将多个变换组合为单个矩阵运算，其通用数学表示为（列主序）：
-
-$Transform=\begin{bmatrix} a & b & 0 \\ c & d & 0 \\ e & f & 1 \end{bmatrix}$
-
-其中：
-
--   `a,d` 控制缩放和旋转
--   `b,c` 控制错切
--   `e,f` 控制平移
-
-#### 变换组合原理
-
-矩阵乘法具有结合性但不具有交换性，变换顺序会影响最终效果，矩阵按从右到左的顺序应用变换：
-
-最终矩阵 = 平移矩阵 × 旋转矩阵 × 缩放矩阵 × 原始坐标
 
 #### Transform 类核心功能
 
@@ -329,7 +300,6 @@ const finalTrans = trans.multiply(childTrans);
 
 1. 变换不生效？
 
-    - 验证绑定的对象是否实现 `updateTransform`
     - 检查有没有把 `trans` 对象赋值给元素的 `transform` 属性
 
 2. 性能问题
@@ -349,7 +319,7 @@ type RenderFn = (canvas: MotaOffscreenCanvas2D, transform: Transform) => void;
 -   `canvas`: 要渲染至的画布，一般直接将内容渲染至这个画布上
 -   `transform`: 当前元素的变换矩阵，相对于父元素，不常用
 
-多数情况下，我们只会使用到第一个参数，`MotaOffscreenCanvas2D` 接口请参考 [API 文档](../api/motajs-render-core/)。下面是一个典型案例：
+多数情况下，我们只会使用到第一个参数，`MotaOffscreenCanvas2D` 接口请参考 [API 文档](../api/motajs-render-core/MotaOffscreenCanvas2D)。下面是一个典型案例：
 
 ```tsx
 const render = (canvas: MotaOffscreenCanvas2D) => {

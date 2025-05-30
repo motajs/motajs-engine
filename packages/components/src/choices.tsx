@@ -232,7 +232,7 @@ const choicesProps = {
 >;
 
 /**
- * 选项框组件，用于在多个选项中选择一个，例如样板的系统设置就由它实现。单次调用参考 {@link getChoice}。
+ * 选项框组件，用于在多个选项中选择一个。单次调用参考 {@link getChoice}。
  * 参数参考 {@link ChoicesProps}，事件参考 {@link ChoicesEmits}。用例如下：
  * ```tsx
  * <Choices

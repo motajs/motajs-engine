@@ -143,7 +143,7 @@ keep.unload();
 
 ## 打开与关闭 UI
 
-在 UI 编写章节已经提到了打开和关闭 UI 使用 `open` 和 `close` 方法，现在我们更细致地讲解一下如何打开与关闭 UI。打开 UI 使用 `open` 方法，定义如下：
+现在我们细致地讲解一下如何打开与关闭 UI。打开 UI 使用 `open` 方法，定义如下：
 
 ```ts
 function open<T extends UIComponent>(
@@ -153,7 +153,7 @@ function open<T extends UIComponent>(
 ): IUIInstance;
 ```
 
-其中第一个参数表示要打开的 UI，第二个表示传给 UI 的参数，第三个表示 UI 是否永远保持显示状态（除非被关闭），不受到显示模式的影响。同种 UI 可以打开多个，也可以在不同的控制器上同时打开多个相同的 UI。例如，如果我们想在主 UI 控制器中添加一个常量的返回游戏按钮，就可以这么写：
+其中第一个参数表示要打开的 UI，第二个表示传给 UI 的参数，第三个表示 UI 是否永远保持显示状态（除非被关闭），不受到显示模式的影响。同种 UI 可以打开多个，也可以在不同的控制器上同时打开多个相同的 UI。例如，如果我们想在主 UI 控制器中添加一个常亮的返回游戏按钮，就可以这么写：
 
 ```ts
 // BackToGame 是自定义 UI，第三个参数传 true 来保证它一直显示在画面上
@@ -169,7 +169,7 @@ const MyUI = defineComponent(props => {
 }, myUIProps);
 ```
 
-除此之外，还提供了一个关闭所有 UI 的：
+除此之外，还提供了一个关闭所有 UI 的接口：
 
 ```ts
 function closeAll(ui?: IGameUI): void;
