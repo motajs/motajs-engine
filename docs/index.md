@@ -4,21 +4,21 @@ layout: home
 
 hero:
     name: 'Motajs Engine'
-    text: '高效 2D 游戏引擎'
-    tagline: 简单，快速
+    text: 'A Fast 2D game engine'
+    tagline: Easy and fast
     actions:
         - theme: brand
-          text: 指南
+          text: Guide
           link: /zh/guide/
         - theme: alt
           text: API
           link: /zh/api/
 
 features:
-    - title: 快速
-      details: 包含多个高性能模块。
-    - title: 简单
-      details: 提供简单易用的 API。
-    - title: 轻量
-      details: 轻量化，引擎体积小。
+    - title: Fast
+      details: Fast in rendering, executing and acting.
+    - title: Easy
+      details: Provide easy and useful API.
+    - title: Light
+      details: Light weight, small in size.
 ---

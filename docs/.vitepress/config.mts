@@ -15,7 +15,7 @@ export default defineConfig({
     },
 
     locales: {
-        root: {
+        zh: {
             label: '简体中文',
             lang: 'zh-CN',
             title: 'Motajs Engine',
@@ -76,7 +76,7 @@ export default defineConfig({
                 socialLinks: [
                     {
                         icon: 'github',
-                        link: 'https://github.com/unanmed/HumanBreak'
+                        link: 'https://github.com/motajs/motajs-engine'
                     }
                 ],
                 search: {
@@ -165,7 +165,7 @@ export default defineConfig({
                 socialLinks: [
                     {
                         icon: 'github',
-                        link: 'https://github.com/unanmed/HumanBreak'
+                        link: 'https://github.com/motajs/motajs-engine'
                     }
                 ],
                 search: {
