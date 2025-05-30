@@ -399,7 +399,7 @@ type RenderFn = (canvas: MotaOffscreenCanvas2D, transform: Transform) => void;
 -   **`canvas`**: The target canvas for rendering (primary focus).
 -   **`transform`**: The element's transformation matrix relative to its parent (rarely used).
 
-Most use cases only require the first parameter. Refer to the [API documentation](../api/motajs-render-core/MotaOffscreenCanvas2d) for `MotaOffscreenCanvas2D`.
+Most use cases only require the first parameter. Refer to the [API documentation](../api/motajs-render-core/MotaOffscreenCanvas2D.md) for `MotaOffscreenCanvas2D`.
 
 **Example:**
 
